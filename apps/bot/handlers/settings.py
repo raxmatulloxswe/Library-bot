@@ -14,13 +14,13 @@ User = get_user_model()
 
 
 
-@router.message(F.text == __("Sozlamalar"))
+@router.message(F.text == __("Sozlamalar⚙️"))
 async def settings_menu(messages: types.Message, state: FSMContext):
     await messages.answer(_("Sozlamalar menusi"), reply_markup=reply_settings_menu())
     await state.set_state(UpdateLanguageStatesGroup.language)
 
 
-@router.message(F.text == __("Tilni o'zgartirish"), UpdateLanguageStatesGroup.language)
+@router.message(F.text == __("Tilni o'zgartirish🔄"), UpdateLanguageStatesGroup.language)
 async def settings_menu_update_language(message: types.Message, state: FSMContext):
     await message.answer(_("Tilni tanlang"), reply_markup=inline_languages())
     

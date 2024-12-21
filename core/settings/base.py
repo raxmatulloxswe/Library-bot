@@ -57,6 +57,7 @@ THIRD_PARTY_APPS = [
     'modeltranslation',
     'django_recaptcha',
     'rosetta',
+    'ckeditor',
 ]
 
 REST_FRAMEWORK = {
@@ -203,3 +204,53 @@ CORS_ALLOW_ALL_ORIGINS = True
 # recaptcha
 RECAPTCHA_PUBLIC_KEY = "6Leb2ngqAAAAAFXhzoX_BLw_MzL0q8qsNOupcRst"
 RECAPTCHA_PRIVATE_KEY = "6Leb2ngqAAAAAIy7D_hbJ5Qe2QU581TrVmXwAwvr"
+
+
+# ckeditor configs
+CKEDITOR_CONFIGS = {
+    "default": {
+        "skin": "moono",
+        # 'skin': 'office2013',
+        "toolbar_Basic": [["Source", "-", "Bold", "Italic"]],
+        "toolbar_YourCustomToolbarConfig": [
+            {
+                "name": "basicstyles",
+                "items": [
+                    "Bold",
+                    "Italic",
+                    "Underline",
+                    "Strike",
+                    "Link", 
+                    "Unlink",
+                ],
+            },
+        ],
+        "toolbar": "YourCustomToolbarConfig",  # put selected toolbar config here
+        # 'toolbarGroups': [{ 'name': 'document', 'groups': [ 'mode', 'document', 'doctools' ] }],
+        # 'height': 291,
+        # 'width': '100%',
+        # 'filebrowserWindowHeight': 725,
+        # 'filebrowserWindowWidth': 940,
+        # 'toolbarCanCollapse': True,
+        # 'mathJaxLib': '//cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML',
+        "tabSpaces": 4,
+        "extraPlugins": ",".join(
+            [
+                "uploadimage",  # the upload image feature
+                # your extra plugins here
+                "div",
+                "autolink",
+                "autoembed",
+                "embedsemantic",
+                "autogrow",
+                # 'devtools',
+                "widget",
+                "lineutils",
+                "clipboard",
+                "dialog",
+                "dialogui",
+                "elementspath",
+            ]
+        ),
+    }
+}

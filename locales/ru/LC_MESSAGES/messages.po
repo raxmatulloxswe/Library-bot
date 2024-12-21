@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-22 01:10+0500\n"
-"PO-Revision-Date: 2024-12-21 23:47+0500\n"
+"POT-Creation-Date: 2024-12-22 04:04+0500\n"
+"PO-Revision-Date: 2024-12-22 04:05+0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -19,43 +19,63 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: apps/bot/models.py:8
+#: apps/bot/models.py:14
 msgid "Telegram ID of the bot admin"
-msgstr "Идентификатор администратора бота в Telegram"
+msgstr ""
 
 #: apps/bot/handlers/commands.py:14
 msgid "Botga xush kelibsiz!"
-msgstr "Добро пожаловать в бот!"
+msgstr ""
 
-#: apps/bot/handlers/settings.py:17 apps/bot/keyboards/reply.py:8
+#: apps/bot/handlers/settings.py:17
 msgid "Sozlamalar"
-msgstr "Настройки"
+msgstr ""
 
 #: apps/bot/handlers/settings.py:19
 msgid "Sozlamalar menusi"
-msgstr "Меню настроек"
+msgstr ""
 
-#: apps/bot/handlers/settings.py:23 apps/bot/keyboards/reply.py:15
+#: apps/bot/handlers/settings.py:23
 msgid "Tilni o'zgartirish"
-msgstr "Изменить язык"
+msgstr ""
 
 #: apps/bot/handlers/settings.py:25
 msgid "Tilni tanlang"
-msgstr "Выберите язык"
-
-#: apps/bot/handlers/settings.py:34
-msgid "Til o'zgartirildi✅"
-msgstr "Язык был изменен✅"
+msgstr ""
 
 #: apps/bot/keyboards/inline.py:10
 msgid "O'zbek🇺🇿"
-msgstr "Узбекский🇺🇿"
+msgstr ""
 
 #: apps/bot/keyboards/inline.py:11
 msgid "Rus🇷🇺"
-msgstr "Русский🇷🇺"
+msgstr ""
 
 #: apps/bot/keyboards/inline.py:12
 msgid "Ingliz🇺🇸"
-msgstr "Английский🇺🇸"
+msgstr ""
+
+#: apps/bot/keyboards/reply.py:8
+msgid "Natija qo'shish➕"
+msgstr ""
+
+#: apps/bot/keyboards/reply.py:9
+msgid "Challanges🆚"
+msgstr ""
+
+#: apps/bot/keyboards/reply.py:10
+msgid "Kitoblar📚"
+msgstr ""
+
+#: apps/bot/keyboards/reply.py:11
+msgid "Sozlamalar⚙️"
+msgstr ""
+
+#: apps/bot/keyboards/reply.py:20
+msgid "Ma'lumotlarimℹ️"
+msgstr ""
+
+#: apps/bot/keyboards/reply.py:21
+msgid "Tilni o'zgartirish🔄"
+msgstr ""
 
