@@ -2,8 +2,6 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import get_user_model
 
-from ckeditor.fields import RichTextField
-
 from apps.common.models import BaseModel
 
 
@@ -30,7 +28,7 @@ class Author(BaseModel):
     
 class Book(BaseModel):
     name = models.CharField(max_length=128)
-    description = RichTextField()
+    description = models.TextField()
     image = models.ImageField(upload_to='book/images/')
     author = models.ForeignKey(Author, on_delete=models.SET_NULL, null=True, related_name='books')
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, related_name='books')
@@ -41,6 +39,7 @@ class Book(BaseModel):
 class Comment(BaseModel):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, verbose_name='comments')
     comment = models.TextField()
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, null=True, related_name='comments')
     rating = models.PositiveIntegerField(default=1)
     
     is_active = models.BooleanField(default=False)

@@ -32,3 +32,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     class Meta:
         verbose_name = _("User")
         verbose_name_plural = _("Users")
+
+    def __str__(self):
+        return self.first_name
