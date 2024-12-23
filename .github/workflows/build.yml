@@ -1,0 +1,27 @@
+name: Remote SSH Command
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Deploy to Server
+    runs-on: ubuntu-latest
+    steps:
+    - name: Execute remote SSH commands using password
+      uses: appleboy/ssh-action@v1.1.0
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd ${{ secrets.PROJECT_PATH }}
+          source ${{ secrets.ENV_PATH }}/bin/activate
+          git pull origin main
+          pip install -r requirements.txt
+          python manage.py migrate
+          python manage.py collectstatic --noinput
+          systemctl restart ${{ secrets.SERVICE_NAME }}
