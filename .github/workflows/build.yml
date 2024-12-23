@@ -21,7 +21,7 @@ jobs:
           cd ${{ secrets.PROJECT_PATH }}
           source ${{ secrets.ENV_PATH }}/bin/activate
           git pull origin main
-          pip install -r requirements.txt
+          pip install -r requirements/production.txt
           python manage.py migrate
           python manage.py collectstatic --noinput
           systemctl restart ${{ secrets.SERVICE_NAME }}
