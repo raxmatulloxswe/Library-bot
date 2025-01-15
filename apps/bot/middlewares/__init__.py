@@ -1,3 +1,5 @@
+from .logging import *
+
 
 def setup_middlewares(dp):
-    pass
+    dp.update.outer_middleware(LoggingMiddleware())

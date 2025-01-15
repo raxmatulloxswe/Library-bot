@@ -2,7 +2,8 @@ import asyncio
 
 from django.core.management.base import BaseCommand
 from django.conf import settings
-
+import logging
+from loguru import logger
 from redis.asyncio.client import Redis
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
@@ -35,6 +36,8 @@ class Command(BaseCommand):
         i18n_middleware = CustomI18nMiddleware(i18n=i18n)
         
         i18n_middleware.setup(dp)
+
+        logging.basicConfig(level=logging.INFO)
 
         setup_handlers(dp)
         await set_commands(bot)
