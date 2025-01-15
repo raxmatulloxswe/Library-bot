@@ -50,7 +50,6 @@ async def book_detail(callback_query: types.CallbackQuery, callback_data: Pagina
     await callback_query.answer(cache_time=0)
 
 
-
 @router.callback_query(BookListStatesGroup.book_detail, BookCommentCallbackData.filter())
 async def book_detail_comment(callback_query: types.CallbackQuery, callback_data: BookCommentCallbackData, state: FSMContext):
 
