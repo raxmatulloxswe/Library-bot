@@ -9,3 +9,8 @@ class BookListStatesGroup(StatesGroup):
     book_detail = State()
     comments = State()
     add_comment = State()
+
+class AddResultStatesGroup(StatesGroup):
+    go_to_book = State()
+    new_result = State()
+    result_confirm = State()
