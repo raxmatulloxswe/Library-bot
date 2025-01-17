@@ -1,15 +1,17 @@
 import asyncio
-
 from django.core.management.base import BaseCommand
 from django.conf import settings
 import logging
 from loguru import logger
 from redis.asyncio.client import Redis
+
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums.parse_mode import ParseMode
 from aiogram.fsm.storage.redis import RedisStorage
 from aiogram.utils.i18n import I18n, SimpleI18nMiddleware, ConstI18nMiddleware
+
+from os import system
 
 from apps.bot.handlers import setup_handlers
 from apps.bot.handlers.commands import set_commands
@@ -28,6 +30,7 @@ class Command(BaseCommand):
         asyncio.run(self.start_bot())
         
     async def start_bot(self):
+        system("clear")
         redis = await Redis.from_url(REDIS_URL)
 
         bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
