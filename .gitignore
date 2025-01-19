@@ -5,10 +5,6 @@ __pycache__/
 
 .idea/
 
-# migration files
-apps/bot/migrations/
-apps/users/migrations/
-
 # C extensions
 *.so
 # media files
