@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-22 04:04+0500\n"
+"POT-Creation-Date: 2025-01-19 17:38+0500\n"
 "PO-Revision-Date: 2024-12-22 04:05+0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uz\n"
@@ -18,63 +18,115 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: apps/bot/models.py:14
+#: apps/bot/models.py:12
 msgid "Telegram ID of the bot admin"
 msgstr ""
 
-#: apps/bot/handlers/commands.py:14
+#: apps/bot/handlers/add_result.py:18 apps/bot/keyboards/reply.py:8
+msgid "Natija qo'shish➕"
+msgstr ""
+
+#: apps/bot/handlers/add_result.py:71 apps/bot/keyboards/reply.py:31
+msgid "Ha, eslab qolinsin✅"
+msgstr ""
+
+#: apps/bot/handlers/add_result.py:83 apps/bot/keyboards/reply.py:32
+msgid "Yo'q ❌"
+msgstr ""
+
+#: apps/bot/handlers/add_result.py:86 apps/bot/keyboards/reply.py:33
+msgid "Yangi natija qo'shish ➕"
+msgstr ""
+
+#: apps/bot/handlers/books_list.py:19 apps/bot/keyboards/reply.py:10
+msgid "Kitoblar📚"
+msgstr ""
+
+#: apps/bot/handlers/books_list.py:63 apps/bot/handlers/books_list.py:95
+msgid ""
+"<b>Yuboruvchi:</b> {user}\n"
+"\n"
+" {comment}"
+msgstr ""
+
+#: apps/bot/handlers/books_list.py:65
+msgid "No comments available.🙁"
+msgstr ""
+
+#: apps/bot/handlers/books_list.py:71 apps/bot/handlers/books_list.py:128
+msgid "Sharh qoldiring"
+msgstr ""
+
+#: apps/bot/handlers/books_list.py:98
+msgid "No comments available."
+msgstr ""
+
+#: apps/bot/handlers/books_list.py:111
+msgid ""
+"<b>Sizning sharhingiz\n"
+"\n"
+"</b>{comment}\n"
+msgstr ""
+
+#: apps/bot/handlers/commands.py:15
 msgid "Botga xush kelibsiz!"
 msgstr ""
 
-#: apps/bot/handlers/settings.py:17
-msgid "Sozlamalar"
+#: apps/bot/handlers/settings.py:17 apps/bot/keyboards/reply.py:11
+msgid "Sozlamalar⚙️"
 msgstr ""
 
 #: apps/bot/handlers/settings.py:19
 msgid "Sozlamalar menusi"
 msgstr ""
 
-#: apps/bot/handlers/settings.py:23
-msgid "Tilni o'zgartirish"
+#: apps/bot/handlers/settings.py:23 apps/bot/keyboards/reply.py:21
+msgid "Tilni o'zgartirish🔄"
 msgstr ""
 
 #: apps/bot/handlers/settings.py:25
 msgid "Tilni tanlang"
 msgstr ""
 
-#: apps/bot/keyboards/inline.py:10
+#: apps/bot/keyboards/inline.py:12
 msgid "O'zbek🇺🇿"
 msgstr ""
 
-#: apps/bot/keyboards/inline.py:11
+#: apps/bot/keyboards/inline.py:13
 msgid "Rus🇷🇺"
 msgstr ""
 
-#: apps/bot/keyboards/inline.py:12
+#: apps/bot/keyboards/inline.py:14
 msgid "Ingliz🇺🇸"
 msgstr ""
 
-#: apps/bot/keyboards/reply.py:8
-msgid "Natija qo'shish➕"
+#: apps/bot/keyboards/inline.py:48
+msgid "Sharxlar💬"
+msgstr ""
+
+#: apps/bot/keyboards/inline.py:49
+msgid "Sharx qoldirish"
+msgstr ""
+
+#: apps/bot/keyboards/inline.py:77
+msgid "Confirm✅"
+msgstr ""
+
+#: apps/bot/keyboards/inline.py:78
+msgid "No🚫"
 msgstr ""
 
 #: apps/bot/keyboards/reply.py:9
 msgid "Challanges🆚"
 msgstr ""
 
-#: apps/bot/keyboards/reply.py:10
-msgid "Kitoblar📚"
-msgstr ""
-
-#: apps/bot/keyboards/reply.py:11
-msgid "Sozlamalar⚙️"
-msgstr ""
-
 #: apps/bot/keyboards/reply.py:20
 msgid "Ma'lumotlarimℹ️"
 msgstr ""
 
-#: apps/bot/keyboards/reply.py:21
-msgid "Tilni o'zgartirish🔄"
-msgstr ""
+#~ msgid "Sozlamalar"
+#~ msgstr ""
+
+#~ msgid "Tilni o'zgartirish"
+#~ msgstr ""
 
